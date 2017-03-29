@@ -1,0 +1,30 @@
+<div class="row">
+	<div class="col-md-6">
+		<input class="refresh-button" type="button" value="REFRESH" ng-click="getTomatoSales(size)" />
+		 <span class="pull-right">
+			<label for=size>Size</label>
+			<input name="size" type="number" min="0" name="Size:" placeholder="Number of sales" ng-model="size" />
+		</span>
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-6">
+		<table class="table table-bordered">
+			<thead class="grey-header">
+				<tr>
+					<th>Provider</th>
+					<th>Tomatoes</th>
+					<th>Sale Date</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="sale in tomatoSales">
+					<td>{{sale.provider}}</td>
+					<td>{{sale.tomatoes}}</td>
+					<td>{{sale.saleDate | date:'dd.MM.yyyy':'UTC'}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

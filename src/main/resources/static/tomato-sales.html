@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="myApp">
+    <head>
+        <title>Tomato Sales</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta charset="UTF-8">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"  />
+        <link rel="stylesheet" type="text/css" href="css/tomato.css"/>
+        <style>
+            html, body, input, select, textarea
+            {
+                font-size: 1.05em;
+            }
+        </style>
+        
+        <!-- load angular -->
+        <script src="//code.angularjs.org/1.6.3/angular.min.js"></script>
+        <script src="//code.angularjs.org/1.6.3/angular-route.min.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/tomatoSalesController.js"></script>
+        <script src="scripts/services/tomatoSalesService.js"></script>
+    </head>
+    <body>
+
+        <header>
+			<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">Tomato Sales List</a>
+				</div>
+			</div>
+			</nav>
+		</header>
+
+        <div class="container">
+
+            <div ng-view></div>
+            
+		</div>
+
+    </body>
+</html>
