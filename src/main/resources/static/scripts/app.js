@@ -11,6 +11,10 @@ myApp.config(function ($routeProvider) {
 	.when('/404', {
 		templateUrl: 'pages/not_found.html',
 	})
+	
+	.otherwise({
+		redirectTo: '/404'
+	})
 
 });
 
